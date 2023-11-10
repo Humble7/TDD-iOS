@@ -14,6 +14,7 @@
 		98C3493E2AFCDD0B00CACFBF /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3493D2AFCDD0B00CACFBF /* FeedItem.swift */; };
 		98C349402AFCDD8E00CACFBF /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3493F2AFCDD8E00CACFBF /* FeedLoader.swift */; };
 		98C349492AFE115F00CACFBF /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C349482AFE115F00CACFBF /* RemoteFeedLoaderTests.swift */; };
+		98C3494D2AFE366600CACFBF /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3494C2AFE366600CACFBF /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		98C3493D2AFCDD0B00CACFBF /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		98C3493F2AFCDD8E00CACFBF /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		98C349482AFE115F00CACFBF /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		98C3494C2AFE366600CACFBF /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		98C3494B2AFE361800CACFBF /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
+				98C3494C2AFE366600CACFBF /* RemoteFeedLoader.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C3494D2AFE366600CACFBF /* RemoteFeedLoader.swift in Sources */,
 				98C349402AFCDD8E00CACFBF /* FeedLoader.swift in Sources */,
 				98C3493E2AFCDD0B00CACFBF /* FeedItem.swift in Sources */,
 				98C349262AFCDA4B00CACFBF /* EssentialFeed.docc in Sources */,
