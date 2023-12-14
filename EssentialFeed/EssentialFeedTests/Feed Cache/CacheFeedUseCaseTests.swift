@@ -126,59 +126,20 @@ final class CacheFeedUseCaseTests: XCTestCase {
         XCTAssertEqual(receivedError as NSError?, expectedError, file: file, line: line)
     }
     
-    private class FeedStoreSpy: FeedStore {
-
-        enum ReceivedMessage: Equatable {
-            case deleteCachedFeed
-            case insert([LocalFeedImage], Date)
-        }
-        
-        private(set) var receivedMessages = [ReceivedMessage]()
-        
-        private var deletionCompletions = [DeletionCompletion]()
-        private var insertionCompletions = [InsertionCompletion]()
-
-        func deleteCachedFeed(completion: @escaping DeletionCompletion) {
-            deletionCompletions.append(completion)
-            receivedMessages.append(.deleteCachedFeed)
-        }
-        
-        func completionDeletion(with error: Error, at index: Int = 0) {
-            deletionCompletions[index](error)
-        }
-        
-        func completionDeletionSuccessfully(at index: Int = 0) {
-            deletionCompletions[index](nil)
-        }
-        
-        func completionInsertion(with error: Error, at index: Int = 0) {
-            insertionCompletions[index](error)
-        }
-        
-        func completionInsertionSuccessfully(at index: Int = 0) {
-            insertionCompletions[index](nil)
-        }
-        
-        func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletion) {
-            insertionCompletions.append(completion)
-            receivedMessages.append(.insert(feed, timestamp))
-        }
-    }
-    
     private func uniqueImage() -> FeedImage {
         return FeedImage(id: UUID(), description: "any", location: "any", url: anyURL())
     }
-    
+
     private func uniqueImageFeed() -> (models: [FeedImage], locals: [LocalFeedImage]) {
         let items = [uniqueImage(), uniqueImage()]
         let locals = items.map { LocalFeedImage(id: $0.id, description: $0.description, location: $0.location, url: $0.url) }
         return (items, locals)
     }
-    
+
     private func anyURL() -> URL {
         URL(string: "http://any-url.com")!
     }
-    
+
     private func anyNSError() -> NSError {
         NSError(domain: "any error", code: 0)
     }
