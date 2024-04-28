@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class CodableFeedStore: FeedStore {
+public final class CodableFeedStore: FeedStore {
     private struct Cache: Codable {
         let feed: [CodableFeedImage]
         let timestamp: Date
@@ -65,14 +65,13 @@ public class CodableFeedStore: FeedStore {
             do {
                 let encoder = JSONEncoder()
                 let cache = Cache(feed: feed.map(CodableFeedImage.init), timestamp: timestamp)
-                let encoded = try! encoder.encode(cache)
+                let encoded = try encoder.encode(cache)
                 try encoded.write(to: storeURL)
                 completion(nil)
             } catch {
                 completion(error)
             }
         }
-        
     }
     
     public func deleteCachedFeed(completion: @escaping DeletionCompletion) {
@@ -90,5 +89,4 @@ public class CodableFeedStore: FeedStore {
             }
         }
     }
-
 }
