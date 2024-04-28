@@ -8,8 +8,8 @@
 import XCTest
 import EssentialFeed
 
-final class CacheFeedUseCaseTests: XCTestCase {
-
+class CacheFeedUseCaseTests: XCTestCase {
+    
     func test_init_doesNotMessageStoreUponCreation() {
         let (_, store) = makeSUT()
 
@@ -18,7 +18,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
     
     func test_save_requestsCacheDeletion() {
         let (sut, store) = makeSUT()
-        
+
         sut.save(uniqueImageFeed().models) { _ in }
         
         XCTAssertEqual(store.receivedMessages, [.deleteCachedFeed])
@@ -29,7 +29,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
         let deletionError = anyNSError()
         
         sut.save(uniqueImageFeed().models) { _ in }
-        store.completionDeletion(with: deletionError)
+        store.completeDeletion(with: deletionError)
         
         XCTAssertEqual(store.receivedMessages, [.deleteCachedFeed])
     }
@@ -40,18 +40,17 @@ final class CacheFeedUseCaseTests: XCTestCase {
         let (sut, store) = makeSUT(currentDate: { timestamp })
         
         sut.save(feed.models) { _ in }
-        store.completionDeletionSuccessfully()
-
+        store.completeDeletionSuccessfully()
+        
         XCTAssertEqual(store.receivedMessages, [.deleteCachedFeed, .insert(feed.locals, timestamp)])
     }
     
     func test_save_failsOnDeletionError() {
-        let timestamp = Date()
-        let (sut, store) = makeSUT(currentDate: { timestamp })
+        let (sut, store) = makeSUT()
         let deletionError = anyNSError()
         
         expect(sut, toCompleteWithError: deletionError, when: {
-            store.completionDeletion(with: deletionError)
+            store.completeDeletion(with: deletionError)
         })
     }
     
@@ -60,8 +59,8 @@ final class CacheFeedUseCaseTests: XCTestCase {
         let insertionError = anyNSError()
         
         expect(sut, toCompleteWithError: insertionError, when: {
-            store.completionDeletionSuccessfully()
-            store.completionInsertion(with: insertionError)
+            store.completeDeletionSuccessfully()
+            store.completeInsertion(with: insertionError)
         })
     }
     
@@ -69,12 +68,12 @@ final class CacheFeedUseCaseTests: XCTestCase {
         let (sut, store) = makeSUT()
         
         expect(sut, toCompleteWithError: nil, when: {
-            store.completionDeletionSuccessfully()
-            store.completionInsertionSuccessfully()
+            store.completeDeletionSuccessfully()
+            store.completeInsertionSuccessfully()
         })
     }
     
-    func test_save_doesNotDeliverDeletionErrorAfterSUtInstancehasBeenDeallocated() {
+    func test_save_doesNotDeliverDeletionErrorAfterSUTInstanceHasBeenDeallocated() {
         let store = FeedStoreSpy()
         var sut: LocalFeedLoader? = LocalFeedLoader(store: store, currentDate: Date.init)
         
@@ -82,21 +81,21 @@ final class CacheFeedUseCaseTests: XCTestCase {
         sut?.save(uniqueImageFeed().models) { receivedResults.append($0) }
         
         sut = nil
-        store.completionDeletion(with: anyNSError())
+        store.completeDeletion(with: anyNSError())
         
         XCTAssertTrue(receivedResults.isEmpty)
     }
     
-    func test_save_doesNotDeliverInsertionErrorAfterSUtInstancehasBeenDeallocated() {
+    func test_save_doesNotDeliverInsertionErrorAfterSUTInstanceHasBeenDeallocated() {
         let store = FeedStoreSpy()
         var sut: LocalFeedLoader? = LocalFeedLoader(store: store, currentDate: Date.init)
         
         var receivedResults = [LocalFeedLoader.SaveResult]()
         sut?.save(uniqueImageFeed().models) { receivedResults.append($0) }
         
-        store.completionDeletionSuccessfully()
+        store.completeDeletionSuccessfully()
         sut = nil
-        store.completionInsertion(with: anyNSError())
+        store.completeInsertion(with: anyNSError())
         
         XCTAssertTrue(receivedResults.isEmpty)
     }
@@ -125,5 +124,5 @@ final class CacheFeedUseCaseTests: XCTestCase {
         
         XCTAssertEqual(receivedError as NSError?, expectedError, file: file, line: line)
     }
-
+    
 }
