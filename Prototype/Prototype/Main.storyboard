@@ -37,7 +37,7 @@
                                             <rect key="frame" x="20" y="17" width="353" height="546"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GO6-Du-XcT" userLabel="Location Container">
-                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="58.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaf-dD-dgd" userLabel="Pin Container">
                                                             <rect key="frame" x="0.0" y="0.0" width="10" height="50"/>
@@ -57,7 +57,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry2-ux-npL">
-                                                            <rect key="frame" x="16" y="0.0" width="63" height="36"/>
+                                                            <rect key="frame" x="16" y="0.0" width="337" height="36"/>
                                                             <string key="text">Location,
 Location</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -111,7 +111,7 @@ Description Description Description Description</string>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="GO6-Du-XcT" firstAttribute="width" secondItem="xNw-m9-U3T" secondAttribute="width" multiplier="0.223796" id="3KI-B3-MML"/>
+                                                <constraint firstItem="GO6-Du-XcT" firstAttribute="width" secondItem="xNw-m9-U3T" secondAttribute="width" id="3KI-B3-MML"/>
                                                 <constraint firstItem="sP5-jX-XvX" firstAttribute="width" secondItem="xNw-m9-U3T" secondAttribute="width" id="KkZ-Y6-P4W"/>
                                             </constraints>
                                         </stackView>
