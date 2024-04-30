@@ -35,6 +35,7 @@
 		98582EF32BDE4E70000E441A /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831C6C72B3C197C003B29BE /* SharedTestHelpers.swift */; };
 		98582EF42BDE4E75000E441A /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831C7482B490BCC003B29BE /* FeedCacheTestHelpers.swift */; };
 		98582F2F2BDFDFC7000E441A /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98582F272BDFDFC6000E441A /* EssentialFeediOS.framework */; };
+		98582F442BE0D07C000E441A /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98582F432BE0D07C000E441A /* FeedViewControllerTests.swift */; };
 		98C349262AFCDA4B00CACFBF /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 98C349252AFCDA4B00CACFBF /* EssentialFeed.docc */; };
 		98C3492C2AFCDA4B00CACFBF /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C349212AFCDA4B00CACFBF /* EssentialFeed.framework */; };
 		98C349322AFCDA4B00CACFBF /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C349242AFCDA4B00CACFBF /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,6 +114,7 @@
 		98582F272BDFDFC6000E441A /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98582F2E2BDFDFC7000E441A /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98582F3C2BDFE057000E441A /* EssentialFeediOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeediOS.xctestplan; sourceTree = "<group>"; };
+		98582F432BE0D07C000E441A /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		98C349212AFCDA4B00CACFBF /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C349242AFCDA4B00CACFBF /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		98C349252AFCDA4B00CACFBF /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 		98582F282BDFDFC6000E441A /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				98582F432BE0D07C000E441A /* FeedViewControllerTests.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				98582EC52BDD6318000E441A /* FeedStoreSpecs.swift in Sources */,
 				98C349572B109E1900CACFBF /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				98582ED02BDD7446000E441A /* CoreDataFeedStoreTests.swift in Sources */,
+				98582F442BE0D07C000E441A /* FeedViewControllerTests.swift in Sources */,
 				98582EC72BDD6412000E441A /* XCTestCase+FeedStoreSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,6 +757,7 @@
 		98582F372BDFDFC7000E441A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -786,6 +791,7 @@
 		98582F382BDFDFC7000E441A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -820,6 +826,7 @@
 		98582F3A2BDFDFC7000E441A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MPK4V365N;
@@ -838,6 +845,7 @@
 		98582F3B2BDFDFC7000E441A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MPK4V365N;
