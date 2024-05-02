@@ -269,7 +269,6 @@
 		98582F282BDFDFC6000E441A /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				98582F432BE0D07C000E441A /* FeedViewControllerTests.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -277,6 +276,7 @@
 		98582F322BDFDFC7000E441A /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				98582F432BE0D07C000E441A /* FeedViewControllerTests.swift */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
