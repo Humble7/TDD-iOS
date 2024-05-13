@@ -327,10 +327,17 @@
 		9848939B2BF205A1005691BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		984893A02BF25C28005691BE /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
 				9848939C2BF205AA005691BE /* FeedViewModel.swift */,
 				9848939E2BF2213B005691BE /* FeedImageViewModel.swift */,
 			);
-			path = Models;
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		98582ECE2BDD6EE3000E441A /* FeedStoreSpecs */ = {
@@ -384,6 +391,7 @@
 		98582F282BDFDFC6000E441A /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				984893A02BF25C28005691BE /* Feed Presentation */,
 				984893922BEA9172005691BE /* Feed Image Loader */,
 				984893902BEA9110005691BE /* Feed UI */,
 			);
