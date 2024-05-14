@@ -77,6 +77,9 @@ Location</string>
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="HFy-8N-waJ" eventType="touchUpInside" id="4LH-GY-6uk"/>
+                                                            </connections>
                                                         </button>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-Rg-mBm">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
@@ -136,6 +139,14 @@ Description Description Description Description</string>
                                         <constraint firstItem="2et-HO-xPi" firstAttribute="leading" secondItem="TF0-UQ-bqS" secondAttribute="leadingMargin" id="xmd-Hy-s3p"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="kEO-8F-xpS" id="Icv-VD-Iot"/>
+                                    <outlet property="feedImageContainer" destination="pD4-rT-bFv" id="ptZ-zj-j7D"/>
+                                    <outlet property="feedImageRetryButton" destination="90d-gr-feY" id="dsB-pe-LPM"/>
+                                    <outlet property="feedImageView" destination="SDO-Rg-mBm" id="kZd-Yb-pEy"/>
+                                    <outlet property="locationContainer" destination="adr-uc-Xk4" id="6fG-zj-ZpF"/>
+                                    <outlet property="locationLabel" destination="BDq-Hg-eRI" id="k4A-iE-yXT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
