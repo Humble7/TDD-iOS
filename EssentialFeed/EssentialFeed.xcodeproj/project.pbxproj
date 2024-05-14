@@ -78,6 +78,7 @@
 		98EDC98C2BF365240076F494 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC98B2BF365240076F494 /* UIImageView+Animations.swift */; };
 		98EDC9922BF3AFA10076F494 /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9912BF3AFA10076F494 /* FeedViewControllerTests+Localization.swift */; };
 		98EDC9932BF3B3350076F494 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98EDC9952BF3B3350076F494 /* Feed.strings */; };
+		98EDC99A2BF3B48E0076F494 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9992BF3B48E0076F494 /* FeedLocalizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,7 @@
 		98EDC9942BF3B3350076F494 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		98EDC9962BF3B3940076F494 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		98EDC9972BF3B3E00076F494 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
+		98EDC9992BF3B48E0076F494 /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +422,7 @@
 		98582F322BDFDFC7000E441A /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				98EDC9982BF3B4720076F494 /* Feed Presentation */,
 				984893912BEA9131005691BE /* Feed UI */,
 			);
 			path = EssentialFeediOSTests;
@@ -531,6 +534,14 @@
 				98C349612B12F12800CACFBF /* EssentialFeedAPIEndToEndTests.swift */,
 			);
 			path = EssentialFeedAPIEndToEndTests;
+			sourceTree = "<group>";
+		};
+		98EDC9982BF3B4720076F494 /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				98EDC9992BF3B48E0076F494 /* FeedLocalizationTests.swift */,
+			);
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -804,6 +815,7 @@
 			files = (
 				98582F472BE37F4D000E441A /* FeedUIIntegrationTests.swift in Sources */,
 				9848938F2BEA907C005691BE /* FeedViewControllerTests+Assertions.swift in Sources */,
+				98EDC99A2BF3B48E0076F494 /* FeedLocalizationTests.swift in Sources */,
 				9848937F2BEA058E005691BE /* UIButton+TestHelpers.swift in Sources */,
 				9848937D2BEA052D005691BE /* UIRefreshControl+TestHelpers.swift in Sources */,
 				984893842BEA8DC7005691BE /* UIControl+TestHelpers.swift in Sources */,
