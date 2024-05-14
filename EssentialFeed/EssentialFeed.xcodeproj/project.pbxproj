@@ -77,6 +77,7 @@
 		98EDC98A2BF363970076F494 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9892BF363970076F494 /* UITableView+Dequeueing.swift */; };
 		98EDC98C2BF365240076F494 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC98B2BF365240076F494 /* UIImageView+Animations.swift */; };
 		98EDC9902BF3AD340076F494 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98EDC98F2BF3AD340076F494 /* Feed.strings */; };
+		98EDC9922BF3AFA10076F494 /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9912BF3AFA10076F494 /* FeedViewControllerTests+Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +183,7 @@
 		98EDC9892BF363970076F494 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		98EDC98B2BF365240076F494 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
 		98EDC98F2BF3AD340076F494 /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
+		98EDC9912BF3AFA10076F494 /* FeedViewControllerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 				9848938A2BEA8FB2005691BE /* FeedImageCell+TestHelpers.swift */,
 				9848938C2BEA901B005691BE /* FeedViewControllerTests+LoaderSpy.swift */,
 				9848938E2BEA907C005691BE /* FeedViewControllerTests+Assertions.swift */,
+				98EDC9912BF3AFA10076F494 /* FeedViewControllerTests+Localization.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -814,6 +817,7 @@
 				98582F482BE37FBF000E441A /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				9848937B2BEA04AE005691BE /* UIImage+TestHelpers.swift in Sources */,
 				9848938B2BEA8FB2005691BE /* FeedImageCell+TestHelpers.swift in Sources */,
+				98EDC9922BF3AFA10076F494 /* FeedViewControllerTests+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
