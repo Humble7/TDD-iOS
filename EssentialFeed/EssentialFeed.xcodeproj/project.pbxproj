@@ -76,6 +76,7 @@
 		98EDC9882BF35E3B0076F494 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98EDC9872BF35E3B0076F494 /* Feed.storyboard */; };
 		98EDC98A2BF363970076F494 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9892BF363970076F494 /* UITableView+Dequeueing.swift */; };
 		98EDC98C2BF365240076F494 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC98B2BF365240076F494 /* UIImageView+Animations.swift */; };
+		98EDC9902BF3AD340076F494 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98EDC98F2BF3AD340076F494 /* Feed.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		98EDC9872BF35E3B0076F494 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		98EDC9892BF363970076F494 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		98EDC98B2BF365240076F494 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
+		98EDC98F2BF3AD340076F494 /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +356,7 @@
 				98EDC9852BF35C750076F494 /* FeedViewModel.swift */,
 				984893A12BF25F1E005691BE /* FeedPresenter.swift */,
 				98EDC9812BF35C2A0076F494 /* FeedImagePresenter.swift */,
+				98EDC98F2BF3AD340076F494 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 			knownRegions = (
 				en,
 				Base,
+				el,
 			);
 			mainGroup = 98C349172AFCDA4B00CACFBF;
 			productRefGroup = 98C349222AFCDA4B00CACFBF /* Products */;
@@ -730,6 +734,7 @@
 			files = (
 				98EDC9882BF35E3B0076F494 /* Feed.storyboard in Resources */,
 				984893A62BF33DB9005691BE /* Feed.xcassets in Resources */,
+				98EDC9902BF3AD340076F494 /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
