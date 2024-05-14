@@ -141,6 +141,7 @@ Description Description Description Description</string>
                         <connections>
                             <outlet property="dataSource" destination="gR7-ra-Avq" id="cig-sC-PyU"/>
                             <outlet property="delegate" destination="gR7-ra-Avq" id="NNg-nm-wh7"/>
+                            <outlet property="prefetchDataSource" destination="gR7-ra-Avq" id="KmK-UA-NOG"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="gcR-43-EXs">
