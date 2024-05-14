@@ -74,6 +74,7 @@
 		98EDC9842BF35C610076F494 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9832BF35C610076F494 /* FeedLoadingViewModel.swift */; };
 		98EDC9862BF35C750076F494 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9852BF35C750076F494 /* FeedViewModel.swift */; };
 		98EDC9882BF35E3B0076F494 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98EDC9872BF35E3B0076F494 /* Feed.storyboard */; };
+		98EDC98A2BF363970076F494 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9892BF363970076F494 /* UITableView+Dequeueing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +177,7 @@
 		98EDC9832BF35C610076F494 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		98EDC9852BF35C750076F494 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		98EDC9872BF35E3B0076F494 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		98EDC9892BF363970076F494 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 				984893772BE94C07005691BE /* UIView+Shimmering.swift */,
 				98EDC9872BF35E3B0076F494 /* Feed.storyboard */,
 				984893A52BF33DB9005691BE /* Feed.xcassets */,
+				98EDC9892BF363970076F494 /* UITableView+Dequeueing.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -776,6 +779,7 @@
 				984893A22BF25F1E005691BE /* FeedPresenter.swift in Sources */,
 				984893942BEA917D005691BE /* FeedImageDataLoader.swift in Sources */,
 				984893782BE94C07005691BE /* UIView+Shimmering.swift in Sources */,
+				98EDC98A2BF363970076F494 /* UITableView+Dequeueing.swift in Sources */,
 				98582F4A2BE38031000E441A /* FeedViewController.swift in Sources */,
 				984893762BE636A2005691BE /* FeedImageCell.swift in Sources */,
 				98EDC9862BF35C750076F494 /* FeedViewModel.swift in Sources */,
