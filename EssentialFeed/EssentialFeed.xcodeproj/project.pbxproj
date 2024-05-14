@@ -83,6 +83,7 @@
 		98EDC99E2BF3D4F80076F494 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC99D2BF3D4F80076F494 /* WeakRefVirtualProxy.swift */; };
 		98EDC9A02BF3D5720076F494 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC99F2BF3D5720076F494 /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		98EDC9A22BF3D5BC0076F494 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9A12BF3D5BC0076F494 /* FeedLoaderPresentationAdapter.swift */; };
+		98EDC9A42BF3D5F60076F494 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDC9A32BF3D5F60076F494 /* FeedViewAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +197,7 @@
 		98EDC99D2BF3D4F80076F494 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		98EDC99F2BF3D5720076F494 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		98EDC9A12BF3D5BC0076F494 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		98EDC9A32BF3D5F60076F494 /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 				98582F492BE38031000E441A /* FeedViewController.swift */,
 				98EDC99B2BF3D4700076F494 /* MainQueueDispatchDecorator.swift */,
 				984893992BEE8AD7005691BE /* FeedUIComposer.swift */,
+				98EDC9A32BF3D5F60076F494 /* FeedViewAdapter.swift */,
 				98EDC9A12BF3D5BC0076F494 /* FeedLoaderPresentationAdapter.swift */,
 				98EDC99F2BF3D5720076F494 /* FeedImageDataLoaderPresentationAdapter.swift */,
 				98EDC99D2BF3D4F80076F494 /* WeakRefVirtualProxy.swift */,
@@ -821,6 +824,7 @@
 				98EDC9A02BF3D5720076F494 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				98EDC9842BF35C610076F494 /* FeedLoadingViewModel.swift in Sources */,
 				98EDC9822BF35C2A0076F494 /* FeedImagePresenter.swift in Sources */,
+				98EDC9A42BF3D5F60076F494 /* FeedViewAdapter.swift in Sources */,
 				9848939A2BEE8AD7005691BE /* FeedUIComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
