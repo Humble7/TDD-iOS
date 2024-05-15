@@ -16,10 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="Tjs-4e-y0P">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Tjs-4e-y0P" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GP-rj-W5t">
+                                    <rect key="frame" x="196" y="8" width="0.0" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="6GP-rj-W5t" firstAttribute="top" secondItem="Tjs-4e-y0P" secondAttribute="top" constant="8" id="4Ze-0N-i0m"/>
+                                <constraint firstItem="6GP-rj-W5t" firstAttribute="leading" secondItem="Tjs-4e-y0P" secondAttribute="leading" constant="8" id="GqA-Qd-F4t"/>
+                                <constraint firstAttribute="bottom" secondItem="6GP-rj-W5t" secondAttribute="bottom" constant="8" id="I3X-VD-KxL"/>
+                                <constraint firstAttribute="trailing" secondItem="6GP-rj-W5t" secondAttribute="trailing" constant="8" id="vh2-rQ-UMm"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="6GP-rj-W5t" id="jMZ-9o-VFK"/>
+                                <outletCollection property="gestureRecognizers" destination="sEU-uv-lC0" appends="YES" id="D2t-xS-Vgb"/>
+                            </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="jJ3-Vw-00s">
                             <rect key="frame" x="0.0" y="836" width="393" height="16"/>
@@ -162,8 +180,16 @@ Description Description Description Description</string>
                             <action selector="refresh" destination="gR7-ra-Avq" eventType="valueChanged" id="y0J-Wu-Ebd"/>
                         </connections>
                     </refreshControl>
+                    <connections>
+                        <outlet property="errorView" destination="Tjs-4e-y0P" id="AHj-LU-Qcd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hij-uh-0wB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="sEU-uv-lC0">
+                    <connections>
+                        <action selector="hideMessageAnimated" destination="Tjs-4e-y0P" id="V04-Lr-Fs8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="947.32824427480909" y="-253.52112676056339"/>
         </scene>
